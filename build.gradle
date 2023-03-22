@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.7.8'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation('org.springframework.boot:spring-boot-starter-webflux')
+    implementation ('org.springframework.boot:spring-boot-starter-data-mongodb-reactive')
+    implementation ('org.apache.commons:commons-lang3:3.12.0')
+    implementation ('org.springframework.boot:spring-boot-starter-data-redis-reactive')
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+    testImplementation('io.projectreactor:reactor-test')
+
+    // https://projectlombok.org
+    compileOnly 'org.projectlombok:lombok:1.18.26'
+    annotationProcessor 'org.projectlombok:lombok:1.18.4'
+}
+
+test {
+    useJUnitPlatform()
+}

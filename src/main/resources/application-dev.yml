@@ -1,0 +1,7 @@
+MONGODB_USERNAME: "user1"
+MONGODB_PASSWORD: "pass1"
+MONGODB_HOST: "localhost"
+MONGODB_PORT: '27017'
+MONGODB_DB: "db1"
+MONGODB_RS: "rs1"
+BASE_URL: "https://www.mytesturl.com"
