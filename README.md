@@ -34,3 +34,9 @@ The application must have three endpoints:
 - what is the capacity of my service? How much can it handle/scale?
 - service should be observable
 - every decision made regarding the design of the service or the technologies may be questioned later
+
+## How to run
+
+- Build the project
+- From the root folder, run `docker-compose up`
+- You can test the API using postman
